@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoanCalculator</string>
+    <string name="UiC">Cost of Car:</string>
+    <string name="UiP">Down Payment:</string>
+    <string name="apr">APR: </string>
+    <string name="choice1">Loan</string>
+    <string name="choice2">Lease</string>
+    <string name="output">Monthly Payment</string>
+</resources>

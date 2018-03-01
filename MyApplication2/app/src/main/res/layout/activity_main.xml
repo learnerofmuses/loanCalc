@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myapplication.MainActivity"
+    android:background="#fde">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="40sp"
+        android:textColor="#FF00"
+        android:gravity="center"/>
+
+    <ImageView
+            android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_below="@id/titleView"
+            android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageView"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_label"
+            android:textSize="30sp"/>
+        <EditText
+            android:id= "@id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="numberDecimal"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputLayout"
+        android:onClick="buttonPressed"/>
+
+    <TextView
+        android:id="@+id/outputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_below="@id/convertButton"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputView"
+        android:gravity="center">
+        android:
+
+        <RadioButton
+            android:id="@+id/ctofButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ftoc"
+            android:buttonTint="#0000FF"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/ftocButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ctof"
+            android:buttonTint="#0000FF"/>
+
+
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
